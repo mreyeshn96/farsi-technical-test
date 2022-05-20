@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-6">
+                <h1>Add Transport</h1>
+                <div class="d-flex flex-column gap-2">
+                    <div class="form-group">
+                        <label for="carrier" class="form-label">Transportista:</label>
+                        <select name="carrier" id="carrier" class="form-control"> 
+                            <option value="">Seleccione un transportista</option>
+                            <option value="1">Pedro Gonzales</option>
+                            <option value="2">Orlando Umaña</option>
+                            <option value="3">Juan Carlos</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="collaborator" class="form-label">Colaboradores:</label>
+
+                        <div class="d-flex flex-row gap-2">
+                            <select name="collaborator" id="collaborator" class="form-control"> 
+                                <option value="">Seleccione un transportista</option>
+                                <option value="1">Pedro Gonzales</option>
+                                <option value="2">Orlando Umaña</option>
+                                <option value="3">Juan Carlos</option>
+                            </select>
+                            <button class="btn btn-primary">Agregar</button>
+                        </div>
+
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Distancia</th>
+                                <th scope="col">Costo estimado</th>
+                                <th scope="col">Acciones</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark Otto</td>
+                                <td>21</td>
+                                <td>L. 3000</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary btn-sm">Modificar</button>
+                                        <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+                                        
+                                    </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob Thornton</td>
+                                <td>30</td>
+                                <td>L. 3000</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary btn-sm">Modificar</button>
+                                        <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+                                        
+                                    </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>20</td>
+                                <td>L. 1000</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary btn-sm">Modificar</button>
+                                        <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+                                        
+                                    </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+     
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tariff" class="form-label">Tarifa por KM:</label>
+
+                        <div class="d-flex flex-row gap-2">
+                           <div class="input-group">
+                            <div class="input-group-text">Lps</div>
+                               <input type="number" name="tariff" id="tariff" class="form-control">
+                           </div>
+                      
+                        </div>
+     
+                    </div>
+
+                    <div class="form-group">
+                        <h1>Resumen de costos</h1>
+                        <div class="d-flex flex-column gap-2">
+                            <span>Costo por Km: L. 50</span>
+                            <span>Costo por todo el viaje: L. 4,000</span>
+                        </div>
+
+
+     
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary ">Guardar</button>
+     
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
